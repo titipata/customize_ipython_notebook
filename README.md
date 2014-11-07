@@ -9,10 +9,14 @@ Location of custom.css file is given:
 `~/.ipython/profile_klab/static/custom/custom.css`
 
 And location of the logo:
+
 `~/.ipython/profile_klab/static/base/images/ipynblogo.png`
 
-Then you can run ipython notebook by:
+Then you can run ipython notebook by type:
+
 `ipython notebook --profile klab`
+
+instead of `ipython notebook`. Then, you will be rejoice by this selected font :)
 
 * Thanks HHammond for his [original link](http://nbviewer.ipython.org/gist/HHammond/7a78d35b34d85406aa60)
 
