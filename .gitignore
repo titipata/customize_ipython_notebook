@@ -1,0 +1,27 @@
+# Ignore files
+.DS_Store
+.ipynb_checkpoints/*
+*.zip
+*.gz
+log/*.log
+log/*.log.[0-9]
+
+# recommened from ipython/.
+MANIFEST
+build
+dist
+_build
+docs/man/*.gz
+docs/source/api/generated
+docs/source/config/options
+docs/gh-pages
+IPython/html/notebook/static/mathjax
+IPython/html/static/style/*.map
+*.py[co]
+__pycache__
+*.egg-info
+*~
+*.bak
+.ipynb_checkpoints
+.tox
+.DS_Store
