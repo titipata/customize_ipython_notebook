@@ -26,6 +26,7 @@ Reference
 Team members
 ----------
 * Titipat Achakulvisut
+* Daniel Acuna
 
 Example
 ----------
