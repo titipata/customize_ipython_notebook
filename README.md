@@ -25,3 +25,8 @@ Reference
 Team members
 ----------
 * Titipat Achakulvisut
+
+Example
+----------
+![Alt text](https://github.com/titipata/klab_ipython_notebook/blob/master/notebook_example.png "Example Notebook")
+
