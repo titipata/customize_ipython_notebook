@@ -11,11 +11,11 @@ This will always be an empty file in IPython
 @import url('http://fonts.googleapis.com/css?family=Lato:200');
 @import url('http://fonts.googleapis.com/css?family=Lato:300');
 @import url('http://fonts.googleapis.com/css?family=Lato:400');
-@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 
 /* Change code font */
 .CodeMirror pre {
-    font-family: Monaco, Source Code Pro, Consolas, monocco, monospace;
+    font-family: Monaco;
     font-size: 9pt;
 }
 
@@ -155,14 +155,4 @@ div#notebook {
 
 #notebook_name {
     font-weight: 200;
-}
-
-/* 
-    This is a lazy fix, we *should* fix the 
-    background for each Bootstrap button type
-*/
-#site * .btn {
-    background: #fafafa;
-    -webkit-box-shadow: none;
-    box-shadow: none;
 }
