@@ -1,25 +1,27 @@
 klab_ipython_notebook
 --------------------
 
-Here I attached css file (minor adapted from HHammond) and klab logo for ipython notebook.
-You can create new `profile_klab` folder in `.ipython` folder and add this file into the folder to custom your notebook!
+Here I attached css file (adapted from HHammond) and klab logo for ipython notebook. You can create new `profile_klab` folder in `.ipython` folder and add this `css` file into the folder to custom your notebook!
 
 Location of custom.css file is given:
 
 `~/.ipython/profile_klab/static/custom/custom.css`
 
-And location of the logo:
+And location of the logo is as follow:
 
 `~/.ipython/profile_klab/static/base/images/ipynblogo.png`
 
-Then you can run ipython notebook by type:
+Then you can run ipython notebook by typing:
 
 `ipython notebook --profile klab`
 
-instead of `ipython notebook`. Then, you will be rejoice by this selected font :)
+instead of `ipython notebook`. Then, you will rejoice by this beautiful selected font :)
 
-* Thanks HHammond for his [original link](http://nbviewer.ipython.org/gist/HHammond/7a78d35b34d85406aa60)
+Reference
+----------
+
+* Thanks HHammond from his [original link](http://nbviewer.ipython.org/gist/HHammond/7a78d35b34d85406aa60)
 
 Team members
 ----------
-Titipat Achakulvisut
+* Titipat Achakulvisut
