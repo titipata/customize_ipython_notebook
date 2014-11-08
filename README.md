@@ -1,5 +1,6 @@
 klab_ipython_notebook
 --------------------
+`css` file and logo to customize ipython notebook style for Kording lab.
 
 Here I attached css file (adapted from HHammond) and klab logo for ipython notebook. You can create new `profile_klab` folder in `.ipython` folder and add this `css` file into the folder to custom your notebook!
 
