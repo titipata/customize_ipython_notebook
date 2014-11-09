@@ -6,7 +6,11 @@ In this repository, I attached css file (adapted from HHammond ipython notebook 
 
 `ipython profile create klab`
 
-Note that `klab` is the profile name. Then, we will add this `css` file and logo into the folder to custom your ipython notebook! You can locate `.ipython` location by typing `ipython locate` in bash. Then we can go to that directory. We will see `profile_klab` folder located in `.ipython` folder. Now, we can place given file to the directory that we have created. The location of `custom.css` file is usually located in this location:
+Note that `klab` is the profile name. Our final goal, we will add this `css` file and logo `ipynblogo.png` into the folder to custom your ipython notebook! First, we can locate `.ipython` location by typing
+
+`ipython locate`
+
+in bash shell. Then we can go to that directory. We will see `profile_klab` folder located in `.ipython` folder. Now, we can place given file to the directory that we have created. Suppose the `.ipython` is located in home directory, the location of `custom.css` file is located in this given location:
 
 `~/.ipython/profile_klab/static/custom/custom.css`
 
@@ -31,6 +35,7 @@ Reference
 Team members
 ----------
 * Titipat Achakulvisut
+* Daneil Acuna
 
 Example IPython Notebook
 ----------
