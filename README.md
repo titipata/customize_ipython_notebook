@@ -2,13 +2,15 @@ klab_ipython_notebook
 --------------------
 CSS file and logo extension to customize ipython notebook style for Kording lab.
 
-In this repository, I attached css file (adapted from HHammond ipython notebook example) and klab logo for ipython notebook. You can create new `profile_klab` folder in `.ipython` folder and add this `css` file and logo into the folder to custom your ipython notebook!
+In this repository, I attached css file (adapted from HHammond ipython notebook example) and klab logo for ipython notebook. We can create new `profile_klab` folder in `.ipython` folder by typing this bash script:
 
-First, after you create `profile_klab` folder, you can place given file to the directory that you create. The location of `custom.css` file is usually located in this location:
+`ipython profile create klab`
+
+Note that `klab` is the profile name. Then, we will add this `css` file and logo into the folder to custom your ipython notebook! You can locate `.ipython` location by typing `ipython locate` in bash. Then we can go to that directory. We will see `profile_klab` folder located in `.ipython` folder. Now, we can place given file to the directory that we have created. The location of `custom.css` file is usually located in this location:
 
 `~/.ipython/profile_klab/static/custom/custom.css`
 
-And the location of logo is located as follow:
+And the location of logo is located as follow (use `mkdir` to create folder):
 
 `~/.ipython/profile_klab/static/base/images/ipynblogo.png`
 
