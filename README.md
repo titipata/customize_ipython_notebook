@@ -18,6 +18,10 @@ Now, you can run ipython notebook with your new created profile by typing:
 
 Then, you will rejoice by this beautiful selected font :)
 
+Inspriation
+----------
+* [Subject Zero](http://klab.smpp.northwestern.edu/wiki/index.php5/Subject_Zero), Kording lab mascot
+
 Reference
 ----------
 * HHammond ipython notebook (from nbviewer). Here is his [original link](http://nbviewer.ipython.org/gist/HHammond/7a78d35b34d85406aa60)
@@ -28,5 +32,6 @@ Team members
 
 Example IPython Notebook
 ----------
+Thai version of the k-lab logo
 ![Alt text](https://github.com/titipata/klab_ipython_notebook/blob/master/notebook_example.png "Example Notebook")
 
