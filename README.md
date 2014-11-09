@@ -1,34 +1,33 @@
 klab_ipython_notebook
 --------------------
-`css` file and logo to customize ipython notebook style for Kording lab.
+CSS file and logo extension to customize ipython notebook style for Kording lab.
 
-Here I attached css file (adapted from HHammond) and klab logo for ipython notebook. You can create new `profile_klab` folder in `.ipython` folder and add this `css` file into the folder to custom your notebook!
+In this repository, I attached css file (adapted from HHammond ipython notebook example) and klab logo for ipython notebook. You can create new `profile_klab` folder in `.ipython` folder and add this `css` file and logo into the folder to custom your ipython notebook!
 
-Location of custom.css file is given:
+First, after you create `profile_klab` folder, you can place given file to the directory that you create. The location of `custom.css` file is usually located in this location:
 
 `~/.ipython/profile_klab/static/custom/custom.css`
 
-And location of the logo is as follow:
+And the location of logo is located as follow:
 
 `~/.ipython/profile_klab/static/base/images/ipynblogo.png`
 
-Then you can run ipython notebook by typing:
+Now, you can run ipython notebook with your new created profile by typing:
 
 `ipython notebook --profile klab`
 
-instead of `ipython notebook`. Then, you will rejoice by this beautiful selected font :)
+Then, you will rejoice by this beautiful selected font :)
 
 Reference
 ----------
-
-* Thanks HHammond from his [original link](http://nbviewer.ipython.org/gist/HHammond/7a78d35b34d85406aa60)
+* HHammond ipython notebook (from nbviewer). Here is his [original link](http://nbviewer.ipython.org/gist/HHammond/7a78d35b34d85406aa60)
 
 Team members
 ----------
 * Titipat Achakulvisut
 * Daniel Acuna
 
-Example
+Example IPython Notebook
 ----------
 ![Alt text](https://github.com/titipata/klab_ipython_notebook/blob/master/notebook_example.png "Example Notebook")
 

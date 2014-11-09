@@ -54,8 +54,8 @@ div.text_cell {
 }
 
 div.text_cell_render {
-    font-family: "Computer Modern", "Crimson Text";
-    font-size: 12pt;
+    font-family: lato, "Crimson Text";
+    font-size: 11pt;
     line-height: 145%; /* added for some line spacing of text. */
 }
 
