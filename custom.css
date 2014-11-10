@@ -44,6 +44,11 @@ div.container pre{
     font-size: 9pt;
 }
 
+div.tooltiptext pre{
+    font-family: Monaco;
+    font-size: 8pt;
+}
+
 div.input_area {
     border-color: rgba(0,0,0,0.10);
     background: rbga(0,0,0,0.5);
