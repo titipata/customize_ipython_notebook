@@ -35,7 +35,7 @@ Reference
 Team members
 ----------
 * Titipat Achakulvisut
-* Daneil Acuna
+* Daniel Acuna
 
 Example IPython Notebook
 ----------
