@@ -38,7 +38,7 @@ Then, you will rejoice by this beautiful selected font :)
 
 ####Custom in IPython Notebook
 
-You can also download style to ipython notebook by adding these line to the notebook:
+You can also download style to ipython notebook by simply adding these line to the notebook. This will work with another  customize `css` file which will become handy if you want to change style in particular notebook:
 
 ```python
 import requests
@@ -46,6 +46,10 @@ from IPython.core.display import HTML
 link = requests.get("https://raw.githubusercontent.com/titipata/klab_ipython_notebook/master/custom.css")
 HTML("<style>"+link.content+"</style>")
 ```
+
+####Example IPython Notebook on NBViewer
+
+If you want to put code on NBViewer, we can add `<style>` to the `custom.css` file (where we have `custom_nb.css` file added on the repository). You can download `custom_nb.css` file and put lines of code that includes the file. Example is shown here in NBViewer [link](http://nbviewer.ipython.org/github/titipata/klab_ipython_notebook/blob/master/Example%20Notebook%20with%20Custom.ipynb)
 
 Inspriation
 ----------
