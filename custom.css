@@ -59,9 +59,14 @@ div.text_cell {
 }
 
 div.text_cell_render {
-    font-family: lato, "Crimson Text";
+    font-family: lato;
     font-size: 11pt;
     line-height: 145%; /* added for some line spacing of text. */
+}
+
+div.text_cell_render code{
+    font-family: Monaco;
+    font-size: 9pt;
 }
 
 div.text_cell_render h1,
