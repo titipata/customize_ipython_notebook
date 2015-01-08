@@ -2,6 +2,14 @@ klab_ipython_notebook
 --------------------
 CSS file and logo extension to customize ipython notebook style for Kording lab.
 
+####Quick style change for default notebook
+
+```bash
+cd ~/.ipython/profile_default/static/custom
+rm custom.css
+wget https://raw.githubusercontent.com/titipata/klab_ipython_notebook/master/custom.css
+```
+
 ####Custom by creating new profile
 
 In this repository, I attached css file (adapted from HHammond ipython notebook example) and klab logo for ipython notebook. We can create new `profile_klab` folder in `.ipython` folder by typing this bash script:
@@ -36,9 +44,9 @@ ipython notebook --profile klab
 
 Then, you will rejoice by this beautiful selected font :)
 
-####Custom in IPython Notebook
+####Custom Style in IPython Notebook
 
-You can also download style to ipython notebook by simply adding these line to the notebook. This will work with another  customize `css` file which will become handy if you want to change style in particular notebook:
+You can also download style to ipython notebook by simply adding these lines to the notebook. This will work with another  customize `css` file which will become handy if you want to change style in particular notebook:
 
 ```python
 import requests
@@ -49,7 +57,15 @@ HTML("<style>"+link.content+"</style>")
 
 ####Example IPython Notebook on NBViewer
 
-If you want to put code on NBViewer, we can add `<style>` to the `custom.css` file (where we have `custom_nb.css` file added on the repository). You can download `custom_nb.css` file and put lines of code that includes the file. Example is shown here in NBViewer [link](http://nbviewer.ipython.org/github/titipata/klab_ipython_notebook/blob/master/Example%20Notebook%20with%20Custom.ipynb)
+If you want to put code on NBViewer, we can add `<style>` and `</style>` to the beginning of `custom.css` file (where we have `custom_nb.css` file added on the repository). Then, we can attach `custom_nb.css` file to notebook by put few lines of code that includes the file i.e.
+
+```python
+from IPython.core.display import HTML
+HTML(open("<path_to>/custom_nb.css", "r").read())
+```
+
+Example is shown here in NBViewer [link](http://nbviewer.ipython.org/github/titipata/klab_ipython_notebook/blob/master/Example%20Notebook%20with%20Custom.ipynb)
+
 
 Inspriation
 ----------
