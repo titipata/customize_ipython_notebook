@@ -10,9 +10,11 @@ rm custom.css
 wget https://raw.githubusercontent.com/titipata/klab_ipython_notebook/master/custom.css
 ```
 
+There are a lot more `custom.css` file that you can download from [Nikhil S's Github](https://github.com/nsonnad/base16-ipython-notebook).
+
 ####Custom by creating new profile
 
-In this repository, I attached css file (adapted from HHammond ipython notebook example) and klab logo for ipython notebook. We can create new `profile_klab` folder in `.ipython` folder by typing this bash script:
+This is step-by-step on how to create a new ipython profile and add logo to your own ipython. In this repository, I attached css file (adapted from HHammond ipython notebook example) and klab logo for ipython notebook. We can create new `profile_klab` folder in `.ipython` folder by typing this bash script:
 
 ```bash
 ipython profile create klab
