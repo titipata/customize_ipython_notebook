@@ -1,11 +1,12 @@
 Customize IPython Notebook
 --------------------
 
-CSS file and logo extension to customize IPython Notebook (`version 2.x`) style for [Kording lab](http://klab.smpp.northwestern.edu/wiki/index.php5/Main_Page).
+CSS file and logo extension to customize IPython Notebook style for [Kording lab](http://klab.smpp.northwestern.edu/wiki/index.php5/Main_Page) (it's now named as Jupyter notebook).
 
-####Quick style change for default notebook
 
-Easy way to try the `css` file is just to replace original `custom.css` file with new one using `wget` 
+#### Quick style change for default notebook
+
+**Before version 4.1** easy way to try the `css` file is just to replace original `custom.css` file with new one using `wget`
 
 ```bash
 cd ~/.ipython/profile_default/static/custom
@@ -15,9 +16,16 @@ wget https://raw.githubusercontent.com/titipata/klab_ipython_notebook/master/cus
 
 There are a lot more `custom.css` file that you can download from [Nikhil S's Github](https://github.com/nsonnad/base16-ipython-notebook).
 
-####Customize by creating new profile
+**After 4.1** they move `~/.ipython/profile_default/static/custom/` to `~/.jupyter/custom/` instead (see more details  [here](http://jupyter.readthedocs.org/en/latest/migrating.html)). So first, we have to create the folder in `~/.jupyter`. Then download the `css` file into `~/.jupyter/custom/custom.css`
 
-This is step-by-step on how to create a new ipython profile and add logo to your own ipython. In this repository, I attached css file (adapted from HHammond IPython Notebook example) and klab logo for ipython notebook. We can create new `profile_klab` folder in `.ipython` folder by typing this bash script:
+```bash
+wget https://raw.githubusercontent.com/titipata/klab_ipython_notebook/master/custom.css
+```
+
+
+#### Customize by creating new profile
+
+**Before version 4.1** This is step-by-step on how to create a new ipython profile and add logo to your own ipython. In this repository, I attached css file (adapted from HHammond IPython Notebook example) and klab logo for ipython notebook. We can create new `profile_klab` folder in `.ipython` folder by typing this bash script:
 
 ```bash
 ipython profile create klab
@@ -49,7 +57,17 @@ ipython notebook --profile klab
 
 Then, you will rejoice by this beautiful selected font :)
 
-####Custom Style in IPython Notebook
+**After version 4.1**
+
+This is how you can locate `jupyter` folder.
+
+```bash
+jupyter --config-dir
+```
+
+And you can create configuration file by using `jupyter notebook --generate-config` where you can change details in it.
+
+#### Custom Style in IPython Notebook
 
 You can also download style to ipython notebook by simply adding these lines to the notebook. This will work with another  customize `css` file which will become handy if you want to change style in particular notebook:
 
@@ -60,7 +78,7 @@ link = requests.get("https://raw.githubusercontent.com/titipata/klab_ipython_not
 HTML("<style>"+link.content+"</style>")
 ```
 
-####Example IPython Notebook on NBViewer
+#### Example IPython Notebook on NBViewer
 
 If you want to put code on NBViewer, we can add `<style>` and `</style>` to the beginning of `custom.css` file (where we have `custom_nb.css` file added on the repository). Then, we can attach `custom_nb.css` file to notebook by put few lines of code that includes the file i.e.
 
@@ -89,4 +107,3 @@ Example IPython Notebook
 ----------
 Thai version of the k-lab logo
 ![Alt text](https://github.com/titipata/klab_ipython_notebook/blob/master/notebook_example.png "Example Notebook")
-
