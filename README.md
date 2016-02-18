@@ -57,17 +57,31 @@ ipython notebook --profile klab
 
 Then, you will rejoice by this beautiful selected font :)
 
-**After version 4.1**
+**After version 4.1 and before too**
 
-This is how you can locate `jupyter` folder.
+We can actually apply css in order to custom the logo. Basically, we can add `logo.png` into `.jupyter/custom/logo.png`. Then add the following line to `.jupyter/custom/custom.css` in order to load the logo. (See this [post](http://stackoverflow.com/questions/35469343/change-jupyter-notebook-version-4-x-logo) and this [post](http://stackoverflow.com/questions/27177459/customize-welcome-page-of-ipython-notebook) on Stack Overflow.)
 
-```bash
-jupyter --config-dir
+```css
+#ipython_notebook {
+    height: 40px !important;
+}
+
+#ipython_notebook img{
+    display:block;
+    background: url(logo.png) no-repeat;
+    background-size: contain;
+    width: 233px;
+    height: 33px;
+    padding-left: 233px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 ```
 
-And you can create configuration file by using `jupyter notebook --generate-config` where you can change details in it.
+If you want to increase the space for logo, just add first css tag. And you can control the size of logo by customizing `width` and `height`
+in the second component.
 
-#### Custom Style in IPython Notebook
+#### Custom Style directly on IPython Notebook
 
 You can also download style to ipython notebook by simply adding these lines to the notebook. This will work with another  customize `css` file which will become handy if you want to change style in particular notebook:
 
